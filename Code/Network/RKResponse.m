@@ -129,7 +129,7 @@ return __VA_ARGS__;                                                             
         returnCode = SecTrustEvaluate(trust, &result);
 
         if (returnCode == errSecSuccess) {
-            proceed = (result == kSecTrustResultProceed || result == kSecTrustResultConfirm || result == kSecTrustResultUnspecified);
+            proceed = (result == kSecTrustResultProceed || result == kSecTrustResultUnspecified);
             if (result == kSecTrustResultRecoverableTrustFailure) {
                 // TODO: should try to recover here
                 // call SecTrustGetCssmResult() for more information about the failure
