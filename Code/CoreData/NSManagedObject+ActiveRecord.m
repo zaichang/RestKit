@@ -24,7 +24,6 @@ static NSNumber *defaultBatchSize = nil;
 
 static NSManagedObjectContext *defaultContext = nil;
 
-RK_FIX_CATEGORY_BUG(NSManagedObjectContext_ActiveRecord)
 
 @implementation NSManagedObjectContext (ActiveRecord)
 
@@ -48,7 +47,6 @@ RK_FIX_CATEGORY_BUG(NSManagedObjectContext_ActiveRecord)
 
 @end
 
-RK_FIX_CATEGORY_BUG(NSManagedObject_ActiveRecord)
 
 @implementation NSManagedObject (ActiveRecord)
 

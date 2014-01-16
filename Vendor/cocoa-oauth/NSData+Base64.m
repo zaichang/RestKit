@@ -24,7 +24,6 @@
 #import "NSData+Base64.h"
 #import "RKFixCategoryBug.h"
 
-RK_FIX_CATEGORY_BUG(NSData_Base64)
 
 //
 // Mapping from 6 bit pattern to ASCII character.

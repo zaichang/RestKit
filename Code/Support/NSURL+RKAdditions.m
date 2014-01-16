@@ -23,7 +23,6 @@
 #import "RKFixCategoryBug.h"
 #import "NSString+RKAdditions.h"
 
-RK_FIX_CATEGORY_BUG(NSURL_RKAdditions)
 
 @implementation NSURL (RKAdditions)
 

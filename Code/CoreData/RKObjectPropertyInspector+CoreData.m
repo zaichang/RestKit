@@ -25,7 +25,6 @@
 #import <objc/message.h>
 
 
-RK_FIX_CATEGORY_BUG(RKObjectPropertyInspector_CoreData)
 
 // Set Logging Component
 #undef RKLogComponent

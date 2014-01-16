@@ -33,7 +33,6 @@
 #import "RKFixCategoryBug.h"
 #import "RKPathMatcher.h"
 
-RK_FIX_CATEGORY_BUG(NSString_RKAdditions)
 
 @implementation NSString (RKAdditions)
 

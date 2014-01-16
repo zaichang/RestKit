@@ -29,7 +29,6 @@
 #import "RKLog.h"
 #import "RKFixCategoryBug.h"
 
-RK_FIX_CATEGORY_BUG(UIApplication_RKNetworkActivity)
 
 // Constants
 static NSMutableArray *RKRequestQueueInstances = nil;
