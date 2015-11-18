@@ -202,7 +202,6 @@
 		25160F091456532C0060A5C5 /* SOCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EBD1456532C0060A5C5 /* SOCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160F0A1456532C0060A5C5 /* SOCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160EBE1456532C0060A5C5 /* SOCKit.m */; };
 		25160F0B1456532C0060A5C5 /* SOCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160EBE1456532C0060A5C5 /* SOCKit.m */; };
-		25160F171456538B0060A5C5 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25160F161456538B0060A5C5 /* libxml2.dylib */; };
 		25160F25145655AF0060A5C5 /* RestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DA1145650490060A5C5 /* RestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160F26145655BA0060A5C5 /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160D59145650490060A5C5 /* Network.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160F27145655BA0060A5C5 /* NSDictionary+RKRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160D5C145650490060A5C5 /* NSDictionary+RKRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -472,7 +471,6 @@
 		251611191456F2340060A5C5 /* RKXMLParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 251610571456F2330060A5C5 /* RKXMLParserTest.m */; };
 		251611291456F50F0060A5C5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251611281456F50F0060A5C5 /* SystemConfiguration.framework */; };
 		2516112B1456F5170060A5C5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516112A1456F5170060A5C5 /* CFNetwork.framework */; };
-		2516112C1456F51D0060A5C5 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25160F161456538B0060A5C5 /* libxml2.dylib */; };
 		2516112E1456F5520060A5C5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516112D1456F5520060A5C5 /* CoreData.framework */; };
 		251611301456F5590060A5C5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2516112F1456F5590060A5C5 /* Security.framework */; };
 		251611321456F56C0060A5C5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 251611311456F56C0060A5C5 /* MobileCoreServices.framework */; };
@@ -943,7 +941,6 @@
 		25160EB11456532C0060A5C5 /* LCLNSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLNSLog.m; sourceTree = "<group>"; };
 		25160EBD1456532C0060A5C5 /* SOCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCKit.h; sourceTree = "<group>"; };
 		25160EBE1456532C0060A5C5 /* SOCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCKit.m; sourceTree = "<group>"; };
-		25160F161456538B0060A5C5 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		25160F7B145657220060A5C5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		25160F7D1456572F0060A5C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		25160FA0145658BC0060A5C5 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = SDKs/MacOSX10.7.sdk/usr/lib/libxml2.dylib; sourceTree = DEVELOPER_DIR; };
@@ -1235,7 +1232,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25160F171456538B0060A5C5 /* libxml2.dylib in Frameworks */,
 				25160D1A14564E810060A5C5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1250,7 +1246,6 @@
 				251611321456F56C0060A5C5 /* MobileCoreServices.framework in Frameworks */,
 				251611301456F5590060A5C5 /* Security.framework in Frameworks */,
 				2516112E1456F5520060A5C5 /* CoreData.framework in Frameworks */,
-				2516112C1456F51D0060A5C5 /* libxml2.dylib in Frameworks */,
 				2516112B1456F5170060A5C5 /* CFNetwork.framework in Frameworks */,
 				251611291456F50F0060A5C5 /* SystemConfiguration.framework in Frameworks */,
 				25160D2814564E820060A5C5 /* SenTestingKit.framework in Frameworks */,
@@ -1340,7 +1335,6 @@
 				25160FA0145658BC0060A5C5 /* libxml2.dylib */,
 				25160F7D1456572F0060A5C5 /* Cocoa.framework */,
 				25160F7B145657220060A5C5 /* SystemConfiguration.framework */,
-				25160F161456538B0060A5C5 /* libxml2.dylib */,
 				25160D1914564E810060A5C5 /* Foundation.framework */,
 				25160D2714564E820060A5C5 /* SenTestingKit.framework */,
 				25160D2914564E820060A5C5 /* UIKit.framework */,
@@ -2438,7 +2432,7 @@
 			name = RestKitTests;
 			productName = RestKitTests;
 			productReference = 25160D2614564E820060A5C5 /* RestKitTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		25160E61145651060060A5C5 /* RestKitFramework */ = {
 			isa = PBXNativeTarget;
@@ -2476,7 +2470,7 @@
 			name = RestKitFrameworkTests;
 			productName = RestKitFrameworkTests;
 			productReference = 25160E78145651060060A5C5 /* RestKitFrameworkTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		259C301515128079003066A2 /* RestKitResources */ = {
 			isa = PBXNativeTarget;
