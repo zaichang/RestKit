@@ -68,7 +68,12 @@ typedef id (^RKMutableBlockDictionaryValueBlock)();
 
 - (id)init
 {
-    return [self initWithCapacity:0];
+	self = [super init];
+	if (self != nil)
+	{
+		_mutableDictionary = [[NSMutableDictionary alloc] initWithCapacity:0];
+	}
+    return self;
 }
 
 - (id)initWithCapacity:(NSUInteger)capacity

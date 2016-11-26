@@ -293,7 +293,7 @@ static NSManagedObjectContext *defaultContext = nil;
             }
             else
             {
-                RKLogError(@"Property '%@' not found in %d properties for %@", propertyName, [propDict count], NSStringFromClass(self));
+                RKLogError(@"Property '%@' not found in %ld properties for %@", propertyName, [propDict count], NSStringFromClass(self));
             }
         }
     }

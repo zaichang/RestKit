@@ -145,8 +145,6 @@ static const NSTimeInterval kFlushDelay = 0.3;
         _showsNetworkActivityIndicatorWhenBusy = NO;
 
 #if TARGET_OS_IPHONE
-        BOOL backgroundOK = &UIApplicationDidEnterBackgroundNotification != NULL;
-        if (backgroundOK) {
             [[NSNotificationCenter defaultCenter] addObserver:self
                                                      selector:@selector(willTransitionToBackground)
                                                          name:UIApplicationDidEnterBackgroundNotification
@@ -155,7 +153,6 @@ static const NSTimeInterval kFlushDelay = 0.3;
                                                      selector:@selector(willTransitionToForeground)
                                                          name:UIApplicationWillEnterForegroundNotification
                                                        object:nil];
-        }
 #endif
     }
     return self;
@@ -197,9 +194,9 @@ static const NSTimeInterval kFlushDelay = 0.3;
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"<%@: %p name=%@ suspended=%@ requestCount=%d loadingCount=%d/%d>",
-            NSStringFromClass([self class]), self, self.name, self.suspended ? @"YES" : @"NO",
-            self.count, self.loadingCount, self.concurrentRequestsLimit];
+	return [NSString stringWithFormat:@"<%@: %p name=%@ suspended=%@ requestCount=%lu loadingCount=%lu/%lu>",
+			NSStringFromClass([self class]), self, self.name, self.suspended ? @"YES" : @"NO",
+			(unsigned long)self.count, (unsigned long)self.loadingCount, (unsigned long)self.concurrentRequestsLimit];
 }
 
 - (NSUInteger)loadingCount

@@ -295,7 +295,7 @@ return __VA_ARGS__;                                                             
 
 - (id)bodyAsJSON
 {
-    [NSException raise:nil format:@"Reimplemented as parsedBody"];
+    [NSException raise:@"RestKitException" format:@"Reimplemented as parsedBody"];
     return nil;
 }
 

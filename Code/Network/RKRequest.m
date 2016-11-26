@@ -164,10 +164,7 @@ RKRequestMethod RKRequestMethodTypeFromName(NSString *methodName) {
 #if TARGET_OS_IPHONE
         _backgroundPolicy = RKRequestBackgroundPolicyNone;
         _backgroundTaskIdentifier = 0;
-        BOOL backgroundOK = &UIBackgroundTaskInvalid != NULL;
-        if (backgroundOK) {
-            _backgroundTaskIdentifier = UIBackgroundTaskInvalid;
-        }
+		_backgroundTaskIdentifier = UIBackgroundTaskInvalid;
 #endif
     }
 
@@ -193,8 +190,7 @@ RKRequestMethod RKRequestMethodTypeFromName(NSString *methodName) {
 - (void)cleanupBackgroundTask
 {
     #if TARGET_OS_IPHONE
-    BOOL backgroundOK = &UIBackgroundTaskInvalid != NULL;
-    if (backgroundOK && UIBackgroundTaskInvalid == self.backgroundTaskIdentifier) {
+    if (UIBackgroundTaskInvalid == self.backgroundTaskIdentifier) {
         return;
     }
 
@@ -321,7 +317,7 @@ RKRequestMethod RKRequestMethodTypeFromName(NSString *methodName) {
             [_URLRequest setValue:[_params performSelector:@selector(ContentTypeHTTPHeader)] forHTTPHeaderField:@"Content-Type"];
         }
         if ([_params respondsToSelector:@selector(HTTPHeaderValueForContentLength)]) {
-            [_URLRequest setValue:[NSString stringWithFormat:@"%d", [_params HTTPHeaderValueForContentLength]] forHTTPHeaderField:@"Content-Length"];
+            [_URLRequest setValue:[NSString stringWithFormat:@"%lu", (unsigned long)[_params HTTPHeaderValueForContentLength]] forHTTPHeaderField:@"Content-Length"];
         }
     } else {
         [_URLRequest setValue:@"0" forHTTPHeaderField:@"Content-Length"];
